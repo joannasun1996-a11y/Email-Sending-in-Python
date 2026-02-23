@@ -1,1 +1,1 @@
-# Eail-Sending-in-Python
+# Email-Sending-in-Python
