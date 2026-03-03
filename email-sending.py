@@ -3,7 +3,7 @@ from email.message import EmailMessage
 
 # -------- YOUR DETAILS --------
 your_email = "yourgmail@gmail.com"
-app_password = "your_app_password_here"
+app_password = "your_16_character_app_password_here"
 someone_email = "someone@gmail.com"
 # ------------------------------
 
