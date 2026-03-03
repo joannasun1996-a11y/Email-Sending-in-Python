@@ -1,22 +1,15 @@
 import smtplib
 from email.message import EmailMessage
 
-# -------- YOUR DETAILS --------
-your_email = "yourgmail@gmail.com"
-app_password = "your_16_character_app_password_here"
-someone_email = "someone@gmail.com"
-# ------------------------------
-
-# Create the email
 msg = EmailMessage()
-msg["Subject"] = "Hey!"
-msg["From"] = your_email
-msg["To"] = someone_email
-msg.set_content("Have a great day!")
+msg["Subject"] = "Test Email"
+msg["From"] = "your_email@gmail.com"
+msg["To"] = "receiver@email.com"
+msg.set_content("Hello from Python!")
 
-# Connect to Gmail SMTP server and send
-with smtplib.SMTP_SSL("smtp.gmail.com", 465) as server:
-    server.login(your_email, app_password)
+with smtplib.SMTP("smtp.gmail.com", 587) as server:
+    server.starttls()
+    server.login("your_email@gmail.com", "your_app_password")
     server.send_message(msg)
 
-print("Email sent successfully!")
+print("Email sent!")
