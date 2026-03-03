@@ -5,7 +5,7 @@ from email.message import EmailMessage
 
 # -------- YOUR DETAILS --------
 your_email = "your_gmail"
-app_password = "hspp urhw josg ckpk"
+app_password = "your_app_password"
 Person_your_sending_email to's_email = "Person's_gmail"
 # ------------------------------
 
